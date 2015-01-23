@@ -4,8 +4,9 @@ path = require('path')
 slackReporter = require('mocha-slack-reporter')
 program = require('commander')
 mocha = new Mocha
+pkg = require('../package.json')
 
-program.version('0.0.1')
+program.version(pkg.version)
 program.option('-e, --team <value>','team.slack.com')
 program.option('-o, --token <value>','https://hooks.slack.com/services/something/something/token')
 program.option('-c, --channel <value>','#general')

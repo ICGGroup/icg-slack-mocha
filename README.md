@@ -1,18 +1,17 @@
 # slack-mocha
 A Mocha Utility/Reporter for Slack
 Reports the result of mochajs test to Slack.
-##Instalation
-
+##Installation
 ```bash
-npm install -g slack-mocha
+npm install slack-mocha -g
 ```
 ##Usage
-###Runnning
+###Running
 ```bash
 slackMocha -e <team> -o <token> -c <channel> -f <test file>
 ```
-
 ####Options
+
 *-e, --team* _youteam_.slack.com
 
 *-c, --channel* The channel you want alerts to be posted to, no #.
