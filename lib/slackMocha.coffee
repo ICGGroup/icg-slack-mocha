@@ -29,12 +29,8 @@ if program.team and program.token and program.channel and program.testFile
     team:program.team,
     token:program.token,
     channel:'#' + program.channel
-
   }
   testFile=program.testFile
-
-  # 0 element will be 'node', 1st element will be the file name to run the js.
-  testFilePath = process.argv[2]
 
   mocha.addFile(testFile)
 
@@ -44,5 +40,4 @@ if program.team and program.token and program.channel and program.testFile
     process.on "exit", ->
       process.exit failures
       return
-
     return
