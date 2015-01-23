@@ -1,0 +1,32 @@
+{
+  "name": "slack-mocha",
+  "version": "0.0.1",
+  "description": "Run mocha tests and report the results to a Slack Channel",
+  "main": "./lib/slackMocha.js",
+  "bin": {
+    "slackMocha": "bin/slackMocha.js"
+  },
+  "preferGlobal": "true",
+  "author": "ICG Consulting",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.6.0",
+    "mocha": "^2.1.0",
+    "mocha-slack-reporter": "0.0.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICGGroup/icg-slack-mocha.git"
+  },
+  "keywords": [
+    "slack",
+    "mocha"
+  ],
+  "bugs": {
+    "url": "https://github.com/ICGGroup/icg-slack-mocha/issues"
+  },
+  "homepage": "https://github.com/ICGGroup/icg-slack-mocha"
+}
