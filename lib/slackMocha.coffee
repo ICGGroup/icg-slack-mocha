@@ -9,8 +9,10 @@ pkg = require('../package.json')
 program.version(pkg.version)
 program.option('-e, --team <value>','team.slack.com')
 program.option('-o, --token <value>','https://hooks.slack.com/services/something/something/token')
-program.option('-c, --channel <value>','#general')
+program.option('-c, --channel <value>','general')
 program.option('-f, --testFile <value>','test.js')
+program.option('-m, --minimal',"Minimal Output (failures and complete message)", false )
+program.option('-a, --failureOnly', "Outputs only failures", false)
 program.parse(process.argv)
 
 if not program.team
@@ -30,6 +32,8 @@ if program.team and program.token and program.channel and program.testFile
     team:program.team,
     token:program.token,
     channel:'#' + program.channel
+    minimal:program.minimal
+    failureOnly:program.failureOnly
   }
   testFile=program.testFile
 

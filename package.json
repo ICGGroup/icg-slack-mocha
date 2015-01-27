@@ -1,6 +1,6 @@
 {
   "name": "slack-mocha",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Run mocha tests and report the results to a Slack Channel",
   "main": "./lib/slackMocha.js",
   "bin": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "commander": "^2.6.0",
     "mocha": "^2.1.0",
-    "mocha-slack-reporter": "0.0.3"
+    "mocha-slack-reporter": "0.0.4"
   },
   "scripts": {
     "test": "mocha"
