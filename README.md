@@ -19,3 +19,9 @@ slackMocha -e <team> -o <token> -c <channel> -f <test file>
 *-o, --token* Your token (https://hooks.slack.com/services/something/something/token)
 
 *-f, --testFile* The icon you want to display for successes.
+
+*-m, --minimal* Will only display failures and stats of test run.
+
+*-a, --failureOnly* Will only display failures.
+
+#####Note: If minimal and failureOnly flag are both used, it will function like minimal
