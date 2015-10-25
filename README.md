@@ -1,16 +1,16 @@
 # slack-mocha
 A Mocha Utility/Reporter for Slack
 Reports the result of mochajs test to Slack.
-##Installation
+## Installation
 ```bash
 npm install slack-mocha -g
 ```
-##Usage
-###Running
+## Usage
+### Running
 ```bash
 slackMocha -e <team> -o <token> -c <channel> -f <test file>
 ```
-####Options
+#### Options
 
 *-e, --team* _youteam_.slack.com
 
@@ -24,4 +24,4 @@ slackMocha -e <team> -o <token> -c <channel> -f <test file>
 
 *-a, --failureOnly* Will only display failures.
 
-#####Note: If minimal and failureOnly flag are both used, it will function like minimal
+##### Note: If minimal and failureOnly flag are both used, it will function like minimal

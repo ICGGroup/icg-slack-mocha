@@ -1,6 +1,6 @@
 {
   "name": "slack-mocha",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Run mocha tests and report the results to a Slack Channel",
   "main": "./lib/slackMocha.js",
   "bin": {
